@@ -1,0 +1,97 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          50: '#f0f9ff',
+          100: '#e0f2fe',
+          200: '#bae6fd',
+          300: '#7dd3fc',
+          400: '#38bdf8',
+          500: '#0ea5e9',
+          600: '#0284c7',
+          700: '#0369a1',
+          800: '#075985',
+          900: '#0c4a6e',
+          950: '#082f49',
+        },
+        navy: {
+          50: '#f4f6f8',
+          100: '#e9edf1',
+          200: '#c8d3de',
+          300: '#a6b8cb',
+          400: '#6483a5',
+          500: '#224e7f',
+          600: '#1f4672',
+          700: '#1a3b5f',
+          800: '#152f4c',
+          900: '#0c1a2d',
+          950: '#08111e',
+        },
+        gold: {
+          50: '#fbf9f2',
+          100: '#f7f2e6',
+          200: '#ebe0c1',
+          300: '#decd9b',
+          400: '#c5a850',
+          500: '#ac8305',
+          600: '#9b7605',
+          700: '#816204',
+          800: '#644c03',
+          900: '#523e02',
+          950: '#392b02',
+        },
+        surface: {
+          50: '#fdfcf8',
+          100: '#f9f7f0',
+          200: '#f1eee0',
+          300: '#e6e1cd',
+          400: '#d7cfb3',
+          500: '#bcae8a',
+          600: '#a39062',
+          700: '#867651',
+          800: '#695d40',
+          900: '#554b34',
+          950: '#342e20',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        serif: ['Playfair Display', 'serif'],
+        display: ['Playfair Display', 'serif'],
+      },
+      container: {
+        center: true,
+        padding: '2rem',
+        screens: { '2xl': '1280px' },
+      },
+      animation: {
+        float: 'float 6s ease-in-out infinite',
+        glow: 'glow 2s ease-in-out infinite alternate',
+        'slide-up': 'slideUp 0.5s ease-out',
+        'fade-in': 'fadeIn 0.6s ease-out',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        glow: {
+          '0%': { boxShadow: '0 0 20px rgba(14,165,233,0.1)' },
+          '100%': { boxShadow: '0 0 40px rgba(14,165,233,0.3)' },
+        },
+        slideUp: {
+          '0%': { opacity: '0', transform: 'translateY(30px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};

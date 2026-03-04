@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+@layer base {
+  body {
+    background-color: #fdfcf8;
+    color: #0c1a2d;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-3.5 rounded-full font-semibold transition-all duration-300 shadow-lg active:scale-95;
+    background-color: #0c1a2d;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: #1a3b5f;
+  }
+
+  .btn-outline {
+    @apply px-8 py-3.5 rounded-full border-2 font-semibold transition-all duration-300;
+    border-color: #0c1a2d;
+    color: #0c1a2d;
+  }
+
+  .btn-outline:hover {
+    background-color: #0c1a2d;
+    color: white;
+  }
+
+  .btn-gold {
+    @apply px-8 py-3.5 rounded-full font-semibold transition-all duration-300 shadow-lg;
+    background-color: #ac8305;
+    color: white;
+  }
+
+  .btn-gold:hover {
+    background-color: #9b7605;
+  }
+
+  .classic-card {
+    @apply bg-white border border-[#e6e1cd] rounded-[2rem] p-10 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2;
+  }
+
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#ac8305] to-[#decd9b];
+  }
+
+  .section-padding {
+    @apply py-24 px-6;
+  }
+}
+
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
